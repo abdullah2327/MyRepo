@@ -1,0 +1,589 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+.title {
+ 
+    background-size:cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(6, 11, 34, 0.7),rgba(6,11,34,0.7)),url(./bg2.jpg);
+}
+
+nav{
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%,5%;
+    display: flex;
+}
+
+nav img{
+    width: 300px;
+    padding: 50;
+    
+}
+
+.links{
+    text-align: right;
+    flex: 1;
+
+}
+
+.links ul li{
+    padding: 5px,5px;
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+.links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 20px;
+
+
+
+}
+
+
+
+.links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: brown;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    
+}
+
+.links ul li:hover::after{
+    width: 100%;
+}
+
+.box{
+    width: 90%;
+    color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+
+.box h1{
+    font-size: 80px;
+}
+
+.box p{
+    margin: 10px,0px,40px;
+    font-size: 14px;
+}
+
+.box a{
+    padding: 15px;
+}
+
+.bot {
+    background: transparent;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 30px, 64px;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.bot:hover{
+    border: 1px brown;
+    background: brown;
+    transition: 1s;
+}
+
+
+
+@media(max-width:700px){
+    .box h1{
+        font-size: 20px;
+
+    }
+
+    nav img{
+        width: 100px;
+        
+    }
+
+    .links ul li{
+        padding: 5px,5px;
+        display: inline-block;
+        list-style: none;
+        position: relative;
+        
+    }
+    
+    .links ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 8px;
+        padding: 1px;
+    
+    
+    
+    }
+   
+
+    .links ul{
+        padding: 10px;
+
+    }
+}
+
+
+
+.name {
+    color: white;
+    font-style: normal;
+    font-size: small;
+}
+
+
+
+/* tea plantation */
+
+
+
+.n-eliya {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+
+
+
+.c-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.c-col img{
+    width: 100%;
+    display: block;
+}
+
+.site {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1.5s;
+
+}
+
+.site:hover {
+    background: rgba(36, 228, 7, 0.7);
+
+}
+
+.site h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.site:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+
+}
+
+/* Tea Factories */
+
+.fac {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+.f-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.f-col img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.f-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+/* footer */
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px,0;
+
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icon img{
+    margin: 0,13px;
+    width: 40px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+/* about us */
+
+
+.title2 {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(6, 11, 34, 0.7),rgba(6,11,34,0.7)),url(./wall4.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    
+}
+
+.title2 h1{
+    margin-top: 200px;
+    font-size: 50px;
+   
+}
+
+@media(max-width:700px){
+    .title2 h1{
+        font-size: 40px;
+    }
+}
+
+
+.about-tea {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+}
+
+.a-col {
+    flex-basis: 48%;
+    padding: 30px,2px;
+
+}
+
+.a-col img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.a-col h1{
+    padding-top: 0;
+
+}
+
+.a-col p{
+    padding: 15px,0,25px;
+}
+
+
+@media(max-width:700px){
+    .a-col img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* teas we offer */
+.types{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+  
+}
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p {
+    color: rgb(56, 56, 56);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.t-col {
+    flex-basis: 31%;
+    border-radius: 10%;
+    margin-bottom: 5%;
+    padding: 20px,12px;
+    box-sizing: border-box;
+    background-color: rgb(183, 183, 183);
+    transition: 0.5s;
+}
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px,0;
+}
+
+.t-col:hover{
+    box-shadow: 0 0 20px 0px  black;
+
+}
+
+@media(max-width :700px){
+    .row {
+        flex-direction: column;
+
+    }
+    
+
+   
+}
+
+
+/* product */
+
+.title3 {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(6, 11, 34, 0.7),rgba(6,11,34,0.7)),url(./wall6.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    
+}
+
+.title3 h1{
+    margin-top: 200px;
+    font-size: 50px;
+   
+}
+
+
+.title4 {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(6, 11, 34, 0.7),rgba(6,11,34,0.7)),url(./wall3.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    
+}
+
+.title4 h1{
+    margin-top: 200px;
+    font-size: 50px;
+   
+}
+
+/* museum */
+
+.museum {
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+
+
+}
+
+.m-col1 {
+    flex-basis: 45%;
+}
+
+.m-col1 img {
+    width: 100%;
+
+}
+
+.m-col1 h2 {
+    color: rgb(42, 42, 42);
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+.m-col1 p {
+    color: rgb(67, 67, 67);
+    padding: 0;
+    text-align: justify;
+}
+
+
+
+.m-col2{
+    padding: 0;
+}
+
+.m-col2 img {
+    width: 700px;
+    height: 80vh;
+}
+
+.m-col2 h2 {
+    color: rgb(42, 42, 42);
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+.m-col2 p {
+    color: rgb(67, 67, 67);
+    padding: 0;
+    text-align: justify;
+}
+
+
+@media(max-width :700px){
+    .m-col2 img{
+        width: 100%;
+        padding: 5px;
+        height: 100%;
+    }
+}
+
+
+.title5 {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(6, 11, 34, 0.7),rgba(6,11,34,0.7)),url(./wall7.webp);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    
+}
+
+.title5 h1{
+    margin-top: 200px;
+    font-size: 50px;
+}
+
+
+.seller {
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.sell-col {
+    flex-basis: 50%;
+}
+
+.sell-col img {
+    width: 100%;
+   
+}
+
+
+.sell-col h1 {
+    color: rgb(42, 42, 42);
+    font-weight: 600;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.sell-col p {
+    color: rgb(67, 67, 67);
+    text-align: justify;
+    padding: 0 30px 30px;
+}
+
+
+
+.s-bot {
+    background: transparent;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid rgb(0, 0, 0);
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    background-color: rgb(7, 255, 7);
+
+
+}
+
+.s-bot:hover{
+    border: 1px rgb(14, 5, 95);
+    background: rgb(14, 5, 95);
+    transition: 1s;
+}
+
+
+.sell-col img{
+   
+    flex: auto;
+    width: 100%;
+    justify-content: center;
+}
+
+
+@media(max-width :700px){
+    .sell-col h1 {
+        font-size: 20px;
+}
+}

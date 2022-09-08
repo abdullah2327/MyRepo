@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+
+.heading img {
+    width: 150px;
+}
+
+.heading {
+ 
+    background-size:cover;
+    background-position: center;
+    position: relative;
+    
+    min-height: 10vh;
+    background-color: rgb(72, 72, 72);
+    padding: 5%;
+}
+
+.head-d{
+    width: 90%;
+    color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+
+.head-d h1{
+    font-size: 60px;
+}
+
+@media(max-width:700px){
+    .head-d h1{
+        font-size: 20px;
+    }
+
+    .heading img {
+        width: 50px;
+    }
+}
+
+.title {
+        
+        background-size:cover;
+        background-position: center;
+        position: relative;
+        width: 100%;
+        min-height: 80vh;
+        background-image: linear-gradient(rgba(6, 11, 34, 0.7),rgba(6,11,34,0.7)),url(./516921.jpg);
+    }
+
+    .name{
+        width: 90%;
+        color: white;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    
+    }
+    
+    .name h1{
+        font-size: 30px;
+    }
+    
+   .gallary {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+   }
+
+   .content {
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0,0.7);
+    transition: 0.5s;
+
+   }
+
+   .content:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+    transform: translate(0px, -8px);
+   }
+
+   .content img {
+    width: 200px;
+    height: 400px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 15px;
+   }
+
+   .content p {
+    text-align: center;
+    padding-top: 0 8px;
+    padding-bottom: 15px;
+   }
+
+   .content h5 {
+    font-size: 26px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 15px;
+   }
+
+   button {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+   }
+
+   .buy-1{
+    background: blue;
+   }
+
+   .buy-2{
+    background: red;
+   }
+   .buy-3{
+    background: green;
+   }
+
+   .buy-4{
+    background: rgb(1, 44, 48);
+    }
+
+    @media(max-width:700px){
+        .content{
+            width: 100%;
+        }
+
+
+    }
